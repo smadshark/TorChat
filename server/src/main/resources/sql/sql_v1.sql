@@ -1,5 +1,6 @@
-drop table member;
+-- 제약조건때문에 board 먼저 삭제
 drop table board;
+drop table member;
 
 -- member
 create table member (
@@ -8,7 +9,7 @@ create table member (
     password text not null,
     status smallint not null,
     last_login_at timestamp,
-    password_update_at timestamp,
+    password_updated_at timestamp,
     login_fail_count smallint default 0,
     created_at timestamp DEFAULT timezone('UTC'::text, now()),
     updated_at timestamp
