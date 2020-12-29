@@ -1,10 +1,8 @@
 package com.br.api.vo;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class MemberVO {
 
     private int idx;

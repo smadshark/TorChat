@@ -10,15 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/v1")
+@RequestMapping(value = "/v1/board")
 public class BoardController {
 
     @Autowired
     private BoardService boardService;
 
-    @GetMapping(value = "/Board")
+    @GetMapping("")
     public List<BoardVO> getBoardList() {
-        List<BoardVO> boardList = boardService.getBoardList();
-        return boardList;
+        return boardService.getBoardList();
     }
 }

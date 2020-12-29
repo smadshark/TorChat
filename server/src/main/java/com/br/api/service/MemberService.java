@@ -20,7 +20,6 @@ public class MemberService {
 
     //아이디 조회
     public List<MemberVO> getMemberList(MemberVO vo) {
-        List<MemberVO> memberList = sqlSession.selectList("member.getMemberList", vo);
-        return memberList;
+        return sqlSession.selectList("member.getMemberList", vo);
     }
 }

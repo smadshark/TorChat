@@ -14,9 +14,6 @@ public class BoardService {
     private SqlSession sqlSession;
 
     public List<BoardVO> getBoardList() {
-
-        List<BoardVO> boardList = sqlSession.selectList("board.getBoardList");
-
-        return boardList;
+        return sqlSession.selectList("board.getBoardList");
     }
 }
