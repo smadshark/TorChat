@@ -1,2 +1,2 @@
 # TorChat
-Chatting app
+Chatting app for Spring Boot
